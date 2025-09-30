@@ -1,0 +1,2 @@
+# flask_beginner_lesson
+PythonでWebアプリを作ってみよう！全4回で学ぶFlask入門講座
