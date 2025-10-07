@@ -43,7 +43,7 @@ def detail(number:int):
     return render_template('detail.html', item = item)
   else:
     #合致する商品がない場合
-    return render_template('error404.html', message = '商品が見つかりませんでした')
+    return render_template('error404.html', message = '商品が見つかりませんでした'),404
 
 if __name__ == "__main__":
   app.run()
