@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block title %}商品詳細{% endblock %}
+{% block header %}<h1>商品詳細</h1>{% endblock %}
+{% block content %}
+  <h2>{{ item['itemname'] }}</h2>
+  <p>種類: {{ item['itemtype'] }}</p>
+  <p>価格: {{ item['itemprice'] }}円</p>
+{% endblock %}

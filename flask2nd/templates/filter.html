@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p>{{show_word | truncate}}</p>
+<p>{{show_word | truncate(2)}}</p>
+<p>{{long_show_word | truncate}}</p>
+{% endblock %}

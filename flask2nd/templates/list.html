@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}商品一覧{% endblock %}
+{% block header %}<h1>商品一覧</h1>{% endblock %}
+{% block content %}
+{% for item in items %}
+  <a href="{{ url_for('detail', number=item['itemid']) }}">
+    <h2>{{ item['itemname'] }}</h2>
+    <p>{{ item['itemtype'] }}</p>
+  </a>
+{% endfor %}
+{% endblock %}

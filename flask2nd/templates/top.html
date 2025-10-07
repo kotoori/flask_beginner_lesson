@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block title %}{{word1}}{% endblock %}
+{% block header %}<h1>{{word1}}</h1>{% endblock %}
+{% block content %}
+<a href="{{ url_for('itemlist')}}">商品一覧</a>
+{% endblock %}
