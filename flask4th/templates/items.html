@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <title>Items List</title>
+</head>
+<body>
+    <h1>Items List</h1>
+    <ul>
+        {% for item in items %}
+        <li>
+            <a href="/items/{{ item.id }}">{{ item.name }}</a> ({{ item.category }}) - {{ item.price }}円
+            <a href="/items/update/{{ item.id }}">Edit</a>
+            <form action="/items/delete/{{ item.id }}" method="post" style="display:inline;">
+                <button type="submit">Delete</button>
+            </form>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="/items/add">Add New Item</a>
+</body>
+</html>
